@@ -1,0 +1,247 @@
+*{
+    padding: 0;font-size: 1.3rem;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(70, 70, 61);
+}
+body{
+    /* padding: 0;font-size: 1.3rem;
+    margin: 0; */
+    /* width:100vh; */
+    background: linear-gradient(to left,rgba(73, 74, 163, 0.411),rgba(13, 231, 231, 0.596));
+    overflow-y: hidden;
+}
+.main_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:linear-gradient(to left, rgba(36, 38, 138, 0.096),rgb(58, 185, 194));
+    border-radius: 20px;
+    max-width: 70vw;
+    min-width: 350.8px;
+    min-height: 50vh;
+    max-height: fit-content;
+    margin: 8% auto;
+    padding: 4%;
+    position: relative;
+    box-shadow: 20px 20px 30px rgba(24, 96, 163, 0.671);
+}
+.finalpara_div{
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+/* .main_container ul{
+  display: flex;
+} */
+/* ------------------------ first question css ------------------------*/
+.radio_bts{
+    accent-color: rgb(243, 243, 247);
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+#div1{
+    display: flex;
+    flex-direction: column;
+}
+#selector {
+    width: 305px;
+    margin-left: 30px;
+    transform: scale(1.1);
+  }
+/* -------------------over all container------------------------------- */
+.div_input_container .div1_innput,.div2_innput{
+    margin-bottom: 1vh;
+    /* padding: 1vh 80px; */
+    margin-top: 2vh;
+}
+.div_input_container .div3_innput,.div4_innput{
+    margin-bottom: 2vh;
+    /* padding: 1vh 80px; */
+    margin-top: 2vh;
+}
+.main_div1_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2vw;
+    
+}
+.div1_innput,.div2_innput,.div3_innput,.div4_innput{
+    background-color: rgba(100, 145, 172, 0.562);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1vw 0 1vw 9vw;
+}
+.div1_innput:hover,.div2_innput:hover,.div3_innput:hover,.div4_innput:hover{
+  background-color: rgba(39, 83, 109, 0.562);
+  box-shadow: 2px 2px 20px 4px rgb(118, 123, 131);
+}
+.next_bt_div1{
+    display: flex;
+    justify-content: end;
+}
+.next_bt_div2,.next_bt_div3,.next_bt_div4,.next_bt_div5{
+    display: flex;
+    justify-content: space-between;
+}
+/*-----------------next button and previous bt style---------------------------- */
+.next_bt1_or_to{
+    font-size: 1em;
+    padding: 7px 5vw;
+    border: none;
+    background-color: transparent;
+    background-color: rgba(243, 243, 9, 0.39);
+    border-radius: 10px;
+    margin: 30px 0 5px 0; 
+}
+.next_bt1_or_to:hover{
+  background-color: rgba(148, 146, 14, 0.301);
+  border: .5px solid rgb(241, 241, 3);
+  box-shadow: 1px 1px 10px 1px rgb(238, 238, 92);
+  transition: .5s all linear;
+}
+/* ---------------------------question 3 style---------------------------------- */
+.ques_3_para{
+    margin:20px 10px;
+    font-size: 27px;
+}
+datalist {
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    width: 350px;
+    transform: scale(0.9);
+    margin-left: 17px;
+  }
+  #tickmarks2{
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    width: 350px;
+    transform: scale(0.95);
+    margin-left: 5px;
+  }
+/* ---------------------------question 4 style---------------------------------- */
+  #textbox{
+    width: 30%;
+    background-color: unset;
+    outline: unset;
+    border: none;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  #textbox:focus{
+    background-color: rgba(76, 86, 131, 0.281);
+    border-bottom: 2px solid rgb(50, 5, 248);
+  }
+  .ques4_div{
+    padding: 50px 0px 20px 0px ;
+  }
+/* ---------------------------question 5 style---------------------------------- */
+  .star{
+      border: none;
+      background-color: unset;
+      font-size: 50px;
+      color: yellow;
+  }
+/* ---------------------------timer div style style------------------------------- */
+  #timer_div{
+    
+      display: flex;
+      justify-content: flex-end;
+      font-size: larger;
+      font-weight: 800;
+  }
+  #timer_div p{
+    font-size: 23px;
+  }
+  #timer_div p:nth-child(1){
+    color: rgb(29, 29, 78);
+  }
+  .finish_container{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  #div6{
+    padding-top: 3%;
+    background:linear-gradient(to bottom left, rgba(135, 29, 221, 0.521 ),rgba(58, 185, 194, 0.233)70%);
+    width: 400px;
+    min-width: 330px;
+    height: 440px;
+    box-shadow: 40px 30px 50px rgba(29, 39, 53, 0.548);
+    box-sizing: border-box;
+    border-radius: 4%;
+  }
+  #score_para{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .restart_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+  }
+  #restart_btn_{
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    font-size: 19px;
+    background-color: beige;
+    border: 2px solid rgb(92, 133, 243);
+    border-radius: 25px;
+    background-color: rgba(59, 167, 230, 0.562);
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+  }
+  #restart_btn_:hover{
+    background-color: rgba(39, 83, 109, 0.562);
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 2px 5px gray;
+  }
+  .emoji_div1{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* #emoji_1 img,#emoji_1 img{
+    width: 100px;
+  } */
+  @media (max-width:685px){
+    body{
+      /* overflow-x: scroll; */
+      overflow-y: scroll;
+
+    }
+    .main_div1_container{
+      padding: 10%;
+      display: grid;
+      grid-template-columns: 1fr;
+      
+  }
+  #selector{
+    margin: 0;
+  }
+  #tickmarks{
+    margin: -16px;
+  }
+  #textbox{
+    width: 60%;
+    background-color: unset;
+    outline: unset;
+    border: none;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  .quest_p{
+    font-size: 5vw;
+  }
+  .ques_3_para{
+    font-size: 5vw;
+  }
+  .next_bt1_or_to{
+    font-size: 20px;
+  }
+  }
+  

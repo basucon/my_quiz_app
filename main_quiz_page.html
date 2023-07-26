@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main consecpt</title>
+    <link rel="stylesheet" href="main_page.css">
+    <script src="script1.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="top_cont">
+        <div id="div_logo">
+            <img src="images/quiz_logo.png" alt="" id="img1_logo">
+        </div>
+    </div>
+    <div class="flex_div_container">
+        <div id="div3">
+            <p class="intro_para">Knowledge has a beginning but no end. <br><span>So let's keep ourselves going.</span></p>
+            <div class="inner_div1">
+                <p>Get the quiz</p>
+                <label for="textbox" class="label">Username:</label>
+                <input type="text" name="texbox" id="textbox" placeholder="Enter your username">
+                <span class="label" id="gender">Gender</span><br>
+                <div class="radio_label">
+                    <label for="radio_1" class="label"><input type="radio" name="radiobt_personal" id="radio_1" checked>Male</label>
+                <label for="radio_2" class="label"><input type="radio" name="radiobt_personal" id="radio_2">Female</label>
+                </div>
+                <button id="home_bt" onclick="nextdiv_1()"><span class="bt_span">Get Challenge</span></button><br>
+            <div class="dropdown_box"  id="dp_box" style="display:none">
+                    <select name="challenge" id="dropdown" value="" class="quiz_bt">
+                        <option value="" class="easy_bt" >Level</option>
+                        <option value="easy1" class="easy_bt" >Easy</option>
+                        <option value="medium2" class="medium_bt">Medium</option>
+                        <option value="hard3" class="hard_bt">Hard</option>
+                    </select>
+                    <button id="letsgo_bt" onclick="letsgo()" class="quiz_bt">Let's go</button>
+            </div>
+            </div>
+        </div>
+        <div class="img_div">
+        </div>
+    </div>   
+</body>
+</html>

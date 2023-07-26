@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:linear-gradient(to left,black 70%,rgb(63, 59, 59),gray);
+    font-style: italic;
+  
+}
+#div_logo{
+    padding: 10px 0px 10px 20px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(0, 0, 0),rgb(31, 27, 27));
+    /* background-size:60%; */
+    box-shadow: 0px 10px 40px rgb(3, 3, 3);
+}
+#img1_logo{
+    width: 280px;
+    /* filter:contrast(100%); */
+    filter: brightness(120%);
+}
+#div3{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro_para{
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 1.7em;
+    /* text-align: justify; */
+    text-indent: 2em;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+#radio_1,#radio_2{
+    accent-color: rgb(124, 64, 163);
+    transform: scale(1.1);
+}
+#div3 .inner_div1 *{
+    padding: 6px;
+}
+#div3 .inner_div1{
+    width: 300px;
+    margin-left: 4vw;
+    box-sizing: border-box;
+    padding: 0px 10px 20px 10px;
+    border-radius: 1em;
+    background-color: white;
+}
+#div3 .inner_div1 p{
+    font-size: 1.9em;
+    font-weight: bolder;
+    color: rgb(248, 67, 209);
+    text-shadow:3px 3px 3px #cac3c3;
+}
+.inner_div1 .label{
+    font-size: 1.4em;
+    color: blue;
+    text-shadow:2px 2px 2px #886b6b;
+}
+.inner_div1 .label:hover{
+    color: #e713cb;
+}
+/* .inner_div1 .label:hover{
+} */
+#textbox{
+    width: 52%;
+    height: 1.5em;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid blue;
+    outline: none;
+}
+#textbox:hover{
+    background-color: rgba(128, 128, 128, 0.068);
+}
+#textbox:focus{
+    transition: 1s all linear;
+    background-color: rgba(128, 128, 128, 0.068);
+    border-bottom: 2px solid rgba(140, 0, 255, 0.486);
+}
+.radio_label{
+    margin: 0px 70px 0px 0px;
+    display:flex;
+    justify-content: space-around;
+}
+#home_bt{
+    /* margin:15px */
+    width: 55%;
+    margin-top: 10px;
+    font-style: italic;
+    padding: 5px 0px;
+    color: rgb(218, 250, 250);
+    border-radius: 13px;
+    background: linear-gradient(green,yellow);    
+    font-size: 1.1em;
+    border: none;
+    background: linear-gradient(#3d327e 30%, #e713cb);
+    text-transform:uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.quiz_bt{
+    text-transform: uppercase;
+    border: none;
+    color: beige;
+    padding: 10px 5px;
+    margin-top: 3%;
+    margin-left: -3px;
+    margin-right: 10px;
+    margin-bottom: 4%;
+    background-color: #7d05ecc9;
+    width: 40%;
+    border-radius: 10px ;
+    font-size: 1.1em;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.img_div{
+    margin-top: 20px;
+    display: inline-block;
+    box-shadow:   yellow;
+    box-sizing: border-box;
+    width: 750px;
+    height: 519px;
+    box-shadow: 80px -10px  40px 1px black, inset 20px -10px 40px 40px black;
+    background: url(images/display\ img.jpg);
+    background-attachment: fixed;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 40vw 18vh;
+    filter:drop-shadow(100%);
+} 
+.quiz_bt:hover{
+    background-color: #ce2cb8b2;
+    transition: 1s background-color linear;
+    box-shadow: 3px 3px 6px rgb(179, 127, 221);
+}
+
+.flex_div_container{
+    display:flex;
+    justify-content: space-between;
+}
+@media (max-width:800px){
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background:linear-gradient(to left,black,rgb(63, 59, 59),gray);
+        font-style: italic;
+      
+    }
+    #img1_logo{
+        width: 30vw;
+    }
+    p.intro_para{
+        font-size: 4.5vw;
+    }
+    .img_div{
+        display:none;
+    } 
+    #div3{
+        width:100%
+    }
+    #div3 .inner_div1{
+        min-width: 300px;
+        height: -37vw;
+        margin: 0%;
+    }
+    #div3 .inner_div1 *{
+        padding: 8px;
+        /* margin: 0%; */
+    }
+    #textbox{
+        width: 51%;
+    }
+  }
+
+
